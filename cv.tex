@@ -1,0 +1,267 @@
+%----Required Packages and Functions----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=0.6cm, top=0.5cm, right=0.6cm, bottom=0.5cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}
+{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+\newcommand{\resumeItem}[2]{
+    \item{\textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}}
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} \end{tabular*}\vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\footnotesize{#4}} \\
+    \textit{\footnotesize{#3}} &  \footnotesize{#2} \\
+    \end{tabular*}\vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{\footnotesize{#3}} \\
+    \footnotesize{\textit{#2}} & \footnotesize{#4}\end{tabular*}\vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{\vspace{2mm}\begin{tcolorbox}\textbf{\large #1}\end{tcolorbox}\vspace{-4mm}}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+%-----End of Packages and Functions-------
+
+%---------------INFORMATIONS------------------
+\newcommand{\name}{Mehmet Emre Güneş}
+\newcommand{\graduation}{Expected Graduation: May 2025}
+\newcommand{\phone}{507 792 75 77}
+\newcommand{\email}{emre.gunes@ug.bilkent.edu.tr}
+\newcommand{\github}{memregn}
+\newcommand{\linkedin}{mehmetemregunes}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%--------------HEADING--------------
+
+\parbox{\dimexpr\linewidth \relax}
+    {\begin{tabularx}{\linewidth}{L r}
+    \textbf{\LARGE \name} & +90 \phone\\
+    \graduation & \href{mailto:\email}{\email}\\
+    {\href{https://w3.cs.bilkent.edu.tr/en/}{Bachelor of Science in Computer Science}} & \href{https://github.com/\github}{GitHub} \\ 
+    {\href{https://w3.bilkent.edu.tr/bilkent/}{Bilkent University, Ankara, Türkiye}} & \href{https://www.linkedin.com/in/\linkedin/}{LinkedIn}
+    \end{tabularx}}
+
+\vspace{-2mm}
+%-------------SUMMARY-----------------
+
+\section{\textbf{Summary}}
+    I am a third-year hardworking, and enthusiastic student in the Computer Science Department at Bilkent University. I enjoy learning new things, meeting new people, communicating, sharing ideas, writing code, improving myself, and trying to solve problems. {\textbf{I want to use my passion and talents in business. I cannot wait to gain new experiences in the industry.}}
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+    \setlength{\tabcolsep}{5pt}
+    \renewcommand{\arraystretch}{1.25}
+    \small{\begin{tabularx}
+    {\dimexpr\textwidth-0mm\relax}{|c|C|c|}
+        \hline
+            \textbf{Degree} & \textbf{School} & \textbf{Year} \\
+        \hline
+            Undergraduate & Bilkent University, Ankara, Türkiye & September 2020 - Present \\
+        \hline
+            Exchange Undergraduate (Erasmus+) & École supérieure d'informatique, électronique, automatique (ESIEA), Paris, France & September 2023 - January 2024 \\
+        \hline
+            High School & Eskişehir Anatolian High School, Eskişehir, Türkiye & September 2015 - June 2019 \\
+        \hline
+    \end{tabularx}}
+\vspace{-1mm}
+
+%--------------EXPERIENCE--------------------
+\section{\textbf{Experience}}
+    \resumeSubHeadingListStart
+        \resumeProject
+            {TUSAŞ Engine Industries, Inc.} {Information Technology Intern}
+            {July 2023 - August 2023} {Eskişehir, Türkiye}
+                \resumeItemListStart
+                    %\item {TUSAȘ Engine Industries Inc. (TEI) is an incorporated company established in 1985 as a joint venture of Turkish Aerospace Industries Inc., General Electric (GE), Turkish Armed Forces Foundation (TAFF), and Turkish Aeronautical Association (TAA). TEI, which has become an international manufacturer and a global design center today with its high-quality products and services to the aviation industry, consistently moves forward step by step every day, accomplishing its corporate goals.}
+                    \item {I gained experience in how {\textbf{Windows Server}}, {\textbf{Active Directory}}, and {\textbf{Computer Network}} are utilized within the company during my {\textbf{24-day internship}} in the Information Technology department. I worked on setting up demos on the assigned Windows Server to learn and explore these topics.}
+                \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------TECHNICAL SKILLS-----------------
+
+\section{\textbf{Technical Skills}}
+    \resumeHeadingSkillStart
+        \resumeSubItem{Programming Languages}
+            {C, C++, Java, MIPS Assembly, SystemVerilog}
+        \resumeSubItem{Tools and Frameworks}
+            {Android Studio, CLion, Firebase, Git, Github, Lex, Mars, Vivado, VSCode, Yacc}
+        \resumeSubItem{Operating Systems}
+            {Android, Linux}
+    \resumeHeadingSkillEnd
+\vspace{-1.5mm}
+
+%-----------PROJECTS-----------------
+
+\section{\textbf{Projects}}
+    \resumeSubHeadingListStart
+        \resumeProject
+            {Siu} {Programming Languages (CS 315), Bilkent University}
+            {March 2023 - April 2023} {\href{https://github.com/memregn/Siu}{\textbf{Github}}}
+                \resumeItemListStart
+                    \item {Siu is a new programming language in which only boolean type can be used. Includes complete {\textbf{BNF description}}, lexical analyzer({\textbf{Lex}}), and parser({\textbf{Yacc}}) for Siu. This project was done with the {\textbf{teamwork}} of three people.}
+                    \item {Keywords: \emph{BNF description, Lex, teamwork, Yacc}}
+                \resumeItemListEnd
+        \resumeProject
+            {1987 Migros Grevi} {History of Turkey (HIST 200), Bilkent University}
+            {September 2022 - January 2023} {\href{https://drive.google.com/drive/folders/1G5H6u2htMtbBtiOZKRnt0y9HhukxlCzk?usp=sharing}{\textbf{PDF}}}
+                \resumeItemListStart
+                    \item {This article examines the 1987 Migros Strike, the first strike organized by chain store workers in Turkey after the 1980 military coup. It analyzes the conflict between Migros and the TEZ-KOOP-İŞ union. The article explores the pre-strike conditions of the country's workforce, employer-labor dynamics, and the government's stance on unionism. It covers the events during the strike, including conflicts among workers, the union, government, and employers, and highlights internal union disputes. Lastly, it outlines the strike's outcomes and subsequent changes within the union.}
+                \resumeItemListEnd
+        \resumeProject
+            {BilCat} {Algorithms and Programming II (CS 102), Bilkent University}
+            {July 2021} {\href{https://github.com/memregn/BilCat}{\textbf{Github}}}
+                \resumeItemListStart
+                    \item {With BilCat, users can see the locations where cats are frequently seen living on the Bilkent University campus. Users can check the vaccinations of these cats. Users can mark the exact location where they see the cat and add its instant status as a comment. Users can see other users' comments on cats. This project was done with the {\textbf{teamwork}} of four people. }
+                    \item {Developed on {\textbf{Android Studio}} using {\textbf{Java}} and {\textbf{XML}}. {\textbf{Firebase}} was used for the database. The project was managed on {\textbf{Github}}.}
+                    \item {Keywords: \emph{Android, Android Studio, Firebase, Github, Java, XML, teamwork}}
+                \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------BOARD MEMBERSHIP-----------------
+
+\section{\textbf{Board Membership}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {\href{https://w3.bilkent.edu.tr/www/ogrenci-dekanligi/toplumsal-duyarlilik-projeleri/}{Social Awareness Projects (TDP) Organization}}{Bilkent University, Ankara, Türkiye}
+            {Coordinator}{January 2024 - Present}
+                \resumeItemListStart
+                    \item Social Awareness Projects (TDP) Organization Subgroup coordinates awareness-raising activities on societal issues while also organizing activities that enhance volunteer awareness and motivation. Throughout the year, TDP Organization has organized several activities, including TDP Alumni Day, visits to animal shelters, blood donation campaigns, a visit to Anıtkabir on November 10th, cinema sessions, seminars and awareness activities on the campus for International Day for the Elimination of Violence against Women, play and activity days among TDP volunteers, gatherings for the TDP board members, and a TDP Children’s Festival to celebrate 23 April National Sovereignty and Children's Day, involving approximately 200-250 children from TDP projects.
+                    \item As one of the two coordinators responsible for organizing the above events, I actively contribute to their planning, execution, and coordination. I am pivotal in liaising with external entities, including universities, schools, and various organizations, fostering effective communication. Additionally, I spearhead volunteer coordination efforts, ensuring smooth collaboration among diverse teams.
+                \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------VOLUNTEERING-----------------
+
+\section{\textbf{Volunteering}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {\href{https://w3.bilkent.edu.tr/www/ogrenci-dekanligi/toplumsal-duyarlilik-projeleri/}{The Sun Rises from the Village (Günköy)}}{Bilkent University, Ankara, Türkiye}
+            {Volunteer}{September 2022 - Present}
+                \resumeItemListStart
+                    \item GÜNKÖY (The Sun Rises from the Village) operates within TDP (Social Awareness Projects). This initiative aims to unearth hidden potentials in rural areas. Annually, it visits at least four remote primary schools, constructing new libraries stocked with tailored book collections. Over two days, volunteers conduct educational activities spanning sports, culture, theater, art, music, and science. This collective effort enriches students' learning experiences, nurturing talents and aspirations for a brighter future in these villages.
+                    \item {I volunteered within this project's scope and attended a total of 4 different villages.}
+                \resumeItemListEnd
+        \resumeSubheading
+            {\href{https://w3.bilkent.edu.tr/www/ogrenci-dekanligi/toplumsal-duyarlilik-projeleri/}{Social Awareness Projects (TDP) Organization}}{Bilkent University, Ankara, Türkiye}
+            {Volunteer}{January 2023 - June 2023}
+                \resumeItemListStart
+                    \item I actively volunteered in the Social Awareness Projects (TDP) Organization Subgroup. I took an active role, especially in preparing for the TDP Children’s Festival.
+                \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%-----------COURSES TAKEN-----------------
+
+\section{\textbf{Courses Taken}}
+\resumeHeadingSkillStart
+    \resumeSubItem{CS \& Maths}
+        {Algorithms and Programming I, Algorithms and Programming II, Fundamental Structures of Computer Science I, Fundamental Structures of Computer Science II, Digital Design, Computer Organization, Programming Languages, Calculus I, Calculus II, Discrete and Combinatorial Mathematics, Linear Algebra and Differential Equations}
+    \resumeSubItem{Others}
+        {General Physics I, English and Composition I, English and Composition II, Cultures Civilizations and Ideas I, Cultures Civilizations and Ideas II, Introduction to Modern Biology, History of Turkey, Turkish I, Turkish II}
+\resumeHeadingSkillEnd
+\vspace{-1mm}
+
+%---------------CERTIFICATIONS-------------------
+
+\section{\textbf{Certifications}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {IELTS}{\href{https://drive.google.com/file/d/1jKMRSpP3VZ0Qj-F9RZ2jfN7uosiKkEt6/view?usp=sharing}{\textbf{PDF}}}
+            {IELTS Academic}{10 July 2021}
+        \resumeItemListStart
+            \item {Score: 6.5/9.0 (Overall)}
+            \item {\emph{Reading: 8.0/9.0} | \emph{Listening: 6.5/9.0} | \emph{Writing: 6.0/9.0} | \emph{Speaking: 5.5/9.0} }
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+%---------------LANGUAGES-------------------
+
+\section{\textbf{Languages}}
+    \resumeHeadingSkillStart
+        \resumeSubItem{Turkish} {Native proficiency}
+        \resumeSubItem{English} {Full professional proficiency}
+        \resumeSubItem{French} {Elementary proficiency}
+    \resumeHeadingSkillEnd
+
+\vspace{-1mm}
+
+%-------------------------------------------
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
+
+
