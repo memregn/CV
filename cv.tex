@@ -104,23 +104,26 @@
 %--------------HEADING--------------
 
 \parbox{\dimexpr\linewidth \relax}
-    {\begin{tabularx}{\linewidth}{L r}
+    {
+    \begin{tabularx}{\linewidth}{L r}
     \textbf{\LARGE \name} & +90 \phone\\
     \graduation & \href{mailto:\email}{\email}\\
     {\href{https://w3.cs.bilkent.edu.tr/}{Bachelor of Science in Computer Science}} & \href{https://github.com/\github}{\textcolor{blue}{GitHub}} \\ 
     {\href{https://w3.bilkent.edu.tr/bilkent/}{Bilkent University, Ankara, Türkiye}} & \href{https://www.linkedin.com/in/\linkedin/}{\textcolor{blue}{LinkedIn}}
-    \end{tabularx}}
+    \end{tabularx}
+    }
 
 \vspace{-2mm}
 
 %-------------SUMMARY-----------------
 
 \section{\textbf{Summary}}
-    I am a third-year, hardworking, and enthusiastic student in the Computer Science Department at Bilkent University. I enjoy learning new things, meeting new people, communicating, sharing ideas, writing code, improving myself, and trying to solve problems. {\textbf{I want to use my passion and talents in business. I cannot wait to gain new experiences in the industry.}}
+    As a dedicated and enthusiastic final-year Computer Science student at Bilkent University, I thrive on learning new concepts, connecting with diverse individuals, and sharing innovative ideas. My passion lies in coding, self-improvement, and problem-solving. I am eager to leverage my skills and enthusiasm in the business world and am excited about gaining new experiences in the industry.
+\vspace{-1mm}
 
 %-----------EDUCATION-----------------
 
-\section{\textbf{Education}}
+\section{\textbf{Education}}    
     \setlength{\tabcolsep}{5pt}
     \renewcommand{\arraystretch}{1.25}
     \small{\begin{tabularx}
@@ -141,12 +144,20 @@
 
 \section{\textbf{Experience}}
     \resumeSubHeadingListStart
+        \begin{comment}
+        \resumeProject
+            {Yapı Kredi Teknoloji} {Software Engineering Intern}
+            {June 2024 - Current} {İstanbul, Türkiye}
+                \resumeItemListStart
+                    \item {Working as a {\textbf{Software Engineering Intern}} in the {\textbf{Corporate Architecture}} team under the direction of {\textbf{Architectural Management}}.}
+                \resumeItemListEnd
+        \end{comment}
         \resumeProject
             {TUSAŞ Engine Industries, Inc.} {Information Technology Intern}
             {July 2023 - August 2023} {Eskişehir, Türkiye}
                 \resumeItemListStart
                     %\item {TUSAȘ Engine Industries Inc. (TEI) is an incorporated company established in 1985 as a joint venture of Turkish Aerospace Industries Inc., General Electric (GE), Turkish Armed Forces Foundation (TAFF), and Turkish Aeronautical Association (TAA). TEI, which has become an international manufacturer and a global design center today with its high-quality products and services to the aviation industry, consistently moves forward step by step every day, accomplishing its corporate goals.}
-                    \item {I gained experience in how {\textbf{Windows Server}}, {\textbf{Active Directory}}, and {\textbf{Computer Network}} are utilized within the company during my {\textbf{24-day internship}} in the Information Technology department. I worked on setting up demos on the assigned Windows Server to learn and explore these topics.}
+                    \item {Gained experience in how {\textbf{Windows Server}}, {\textbf{Active Directory}}, and {\textbf{Computer Network}} are utilized within the company during my {\textbf{24-day internship}} in the Information Technology department. I worked on setting up demos on the assigned Windows Server to learn and explore these topics.}
                 \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-6.5mm}
@@ -154,45 +165,36 @@
 %-----------TECHNICAL SKILLS-----------------
 
 \section{\textbf{Technical Skills}}
+\vspace{1mm}
     \resumeHeadingSkillStart
         \resumeSubItem{Programming Languages}
-            {C, C++, Java, MIPS Assembly, SystemVerilog}
+            {C, C++, Java, Python, MIPS Assembly, SQL, SystemVerilog}
         \resumeSubItem{Tools and Frameworks}
             {Android Studio, CLion, Firebase, Git, Github, LaTeX, Lex, Mars, Vivado, VSCode, Yacc}
         \resumeSubItem{Operating Systems}
             {Android, Linux}
     \resumeHeadingSkillEnd
-\vspace{-2.5mm}
+\vspace{-1mm}
 
 %-----------PROJECTS-----------------
 
 \section{\textbf{Projects}}
     \resumeSubHeadingListStart
-        \begin{comment}
         \resumeProject
-            {CV} {Curriculum Vitae}
-            {January 2024 - Present} {\href{https://github.com/memregn/CV}{\textbf{\color{blue}GitHub}}}
+            {Biletkent} {Database Systems (CS 353), Bilkent University}
+            {January 2024 - May 2024} {\href{https://github.com/memregn/Biletkent}{\textbf{\color{blue}GitHub}}}
                 \resumeItemListStart
-                    \item {CV contains my professional Curriculum Vitae (CV) formatted in {\textbf{LaTeX}}. It showcases my education, work experience, technical skills, projects, board memberships, volunteering, language proficiency, courses, and certifications.}
-                    \item {Keywords: \emph{LaTeX}}
+                    \item {Biletkent is a ticket-purchasing application where organizers can add various events. Users can buy tickets for events such as concerts, theaters, stand-ups, and festivals. Admins can create events and see the statistics for all events.}
+                    \item {{\textbf{HTML}} and {\textbf{CSS}} were used for the front-end. {\textbf{Flask-Python}} was used for the back end. {\textbf{MySQL}} was used for the database, which was facilitated by {\textbf{Docker}}. Changes made to the application's front-end and back-end were tested on the local server using Docker.}
+                    \item {Keywords: \emph{CSS, Docker, Flask-Python, HTML, MySQL}}
                 \resumeItemListEnd
-        \end{comment}
         \resumeProject
             {Siu} {Programming Languages (CS 315), Bilkent University}
             {March 2023 - April 2023} {\href{https://github.com/memregn/Siu}{\textbf{\color{blue}GitHub}}}
                 \resumeItemListStart
-                    \item {Siu is a new programming language in which only boolean type can be used. Includes complete {\textbf{BNF description}}, lexical analyzer ({\textbf{Lex}}), and parser ({\textbf{Yacc}}) for Siu. This project was done with the {\textbf{teamwork}} of three people.}
+                    \item {Siu is a new programming language in which only boolean type can be used. Includes complete {\textbf{BNF description}}, lexical analyzer {\textbf{Lex}}, and parser {\textbf{Yacc}} for Siu. This project was done with the {\textbf{teamwork}} of three people.}
                     \item {Keywords: \emph{BNF description, Lex, teamwork, Yacc}}
                 \resumeItemListEnd
-        \begin{comment}
-        \resumeProject
-            {1987 Migros Grevi} {History of Turkey (HIST 200), Bilkent University}
-            {September 2022 - January 2023} {\href{https://drive.google.com/drive/folders/1G5H6u2htMtbBtiOZKRnt0y9HhukxlCzk?usp=sharing}{\textbf{\color{blue}PDF}}}
-                \resumeItemListStart
-                    \item This article examines the 1987 Migros Strike, the first strike organized by chain store workers in Turkey after the 1980 military coup. It analyzes the conflict between Migros and the TEZ-KOOP-İŞ union. The article explores the pre-strike conditions of the country's workforce, employer-labor dynamics, and the government's stance on unionism.
-                    \item It covers the events during the strike, including conflicts among workers, the union, government, and employers, and highlights internal union disputes. Lastly, it outlines the strike's outcomes and subsequent changes within the union.
-                \resumeItemListEnd
-        \end{comment}
         \resumeProject
             {BilCat} {Algorithms and Programming II (CS 102), Bilkent University}
             {July 2021} {\href{https://github.com/memregn/BilCat}{\textbf{\color{blue}GitHub}}}
@@ -210,10 +212,11 @@
     \resumeSubHeadingListStart
         \resumeSubheading
             {\href{https://w3.bilkent.edu.tr/www/ogrenci-dekanligi/toplumsal-duyarlilik-projeleri/}{Social Awareness Projects (TDP) Organization}}{Bilkent University, Ankara, Türkiye}
-            {Coordinator}{January 2024 - Present}
+            {Coordinator}{January 2024 - June 2024}
                 \resumeItemListStart
-                    \item Social Awareness Projects (TDP) Organization Subgroup organizes seminars, events, and bonding activities to increase the motivation of the volunteers and raise awareness about social issues like women and animal rights. Additionally, it plans and organizes a Children’s Fest that children can enjoy with the participation of 400 children and 100 volunteers.
-                    \item As the coordinator of this project, I actively contribute to the planning, execution, and coordination of these activities. Moreover, I manage children, volunteers, and event places during the Children’s Fest and other events.
+                    \item Planned and organized seminars, events, and bonding activities to increase the motivation of the volunteers and raise awareness about social issues like women and animal rights.
+                    \item Organized a Children’s Fest that children can enjoy with the participation of 375 children and 160 volunteers.
+                    \item Managed children, volunteers, and event places during the Children’s Fest and other events.
                 \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-6.5mm}
@@ -226,14 +229,14 @@
             {\href{https://w3.bilkent.edu.tr/www/ogrenci-dekanligi/toplumsal-duyarlilik-projeleri/}{The Sun Rises from the Village (Günköy)}}{Bilkent University, Ankara, Türkiye}
             {Volunteer}{September 2022 - Present}
                 \resumeItemListStart
-                    \item The Sun Rises from the Village (Günköy) operates within TDP (Social Awareness Projects), focused on building libraries in underserved rural schools. The project conducts various artistic, scientific, and educational activities for children through diverse subgroups. 
-                    \item {I volunteered within this project's scope and attended a total of 4 different villages.}
+                    \item Participated in a project establishing libraries in rural schools. Attended {\textbf{three}} villages and participated in activities to enhance students' scientific, cultural, and artistic skills in village schools.
                 \resumeItemListEnd
         \resumeSubheading
             {\href{https://w3.bilkent.edu.tr/www/ogrenci-dekanligi/toplumsal-duyarlilik-projeleri/}{Social Awareness Projects (TDP) Organization}}{Bilkent University, Ankara, Türkiye}
             {Volunteer}{January 2023 - June 2023}
                 \resumeItemListStart
-                    \item I actively volunteered in the Social Awareness Projects (TDP) Organization Subgroup. I took an active role, especially in preparing for the TDP Children’s Festival.
+                    \item Actively volunteered in the Social Awareness Projects (TDP) Organization Subgroup.
+                    \item Played a key role in preparing for the TDP Children’s Festival.
                 \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-6.5mm}
@@ -241,14 +244,16 @@
 %---------------LANGUAGES-------------------
 
 \section{\textbf{Languages}}
+\vspace{1.5mm}
     \resumeHeadingSkillStart
         \resumeSubItem{Turkish} {Native proficiency}
-        \resumeSubItem{English} {Full professional proficiency}
+        \resumeSubItem{English} {Full professional proficiency {\href{https://drive.google.com/file/d/1jKMRSpP3VZ0Qj-F9RZ2jfN7uosiKkEt6/view}{(IELTS: 6.5/9.0)}}}
         \resumeSubItem{French} {Elementary proficiency}
     \resumeHeadingSkillEnd
 
 \vspace{-1mm}
 
+\begin{comment}
 %-----------COURSES TAKEN-----------------
 
 \section{\textbf{Courses Taken}}
@@ -259,34 +264,31 @@
         {Asserting Oneself, Cultures Civilizations and Ideas I, Cultures Civilizations and Ideas II, Design Sprint, Digital Signal Processing \& Applications, English, English and Composition I, English and Composition II, French as a Foreign Language, General Physics I, General Physics II, History of Turkey, Introduction to Modern Biology, Turkish I, Turkish II, 	Science Technology and Society, Technical Report Writing and Presentation}
 \resumeHeadingSkillEnd
 \vspace{-1mm}
+\end{comment}
 
 %---------------CERTIFICATIONS-------------------
 
 \section{\textbf{Certifications}}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {Java 201}{\href{https://drive.google.com/file/d/1vD8vmiyYwKvS5aYOlA2uqjPI9n-wBM9T/view}{\textbf{\color{blue}Certificate}}}
-            {Turkcell Geleceği Yazanlar}{January 2024}
-        \resumeSubheading
-            {Java 101}{\href{https://drive.google.com/file/d/1zdZCYs2E5Qpped_xJRrILFj2uN1enebY/view}{\textbf{\color{blue}Certificate}}}
-            {Turkcell Geleceği Yazanlar}{January 2024}
-        \resumeSubheading
-            {Derin Öğrenme ANN (Deep Learning Artificial Neural Networks)}{\href{https://drive.google.com/file/d/1c3lkospGb5_XNwzyL9Z_lm4VM06TJs1d/view}{\textbf{\color{blue}Certificate}}}
-            {Turkcell Geleceği Yazanlar}{August 2023}
-        \resumeSubheading
-            {Temel Network Eğitimi (Introduction to Computer Network)}{\href{https://drive.google.com/file/d/16RW97XUNj9QyksCpjlbETMRPHho53KJg/view}{\textbf{\color{blue}Certificate}}}
-            {Turkcell Geleceği Yazanlar}{July 2023}
-        \resumeSubheading
-            {IELTS}{\href{https://drive.google.com/file/d/1jKMRSpP3VZ0Qj-F9RZ2jfN7uosiKkEt6/view}{\textbf{\color{blue}Certificate}}}
-            {IELTS Academic}{July 2021}
-                \resumeItemListStart
-                    \item {Score: 6.5/9.0 (Overall)}
-                    \item {\emph{Reading: 8.0/9.0} | \emph{Listening: 6.5/9.0} | \emph{Writing: 6.0/9.0} | \emph{Speaking: 5.5/9.0} }
-                \resumeItemListEnd
-        \resumeSubheading
-            {Programming for Everybody (Getting Started with Python)}{\href{https://www.coursera.org/account/accomplishments/certificate/6EU4LEV48RQX}{\textbf{\color{blue}Certificate}}}
-            {Coursera}{January 2021}
-    \resumeSubHeadingListEnd
+\vspace{1mm}
+    \resumeItemListStart
+        \item {\textbf{Advanced Java 301}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1GSBJzBw-dSaB3hQwN-c5BQGGdy20qW58/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Advanced Java 201}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1e7dPbrePcGrrI3544lBZZxP0abToFgE_/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Java 301}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1sKNB_yAps1XsJUGUAYD7-83D6pKqizfY/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{SQL 401}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1wTxdG7q5S2GMd0eEBudNcbIywe1suLhq/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{SQL 301}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1zV4tX2HmgFbVNMJ1mMnidrbv5uQRCh5A/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{SQL 201}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1a5EPsstzwkN3M9Z0G9QIZO8WxZcRtkNj/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{SQL 101}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1d1iOzdGYhEu5KoeWip_SZRFnxdsuqf6D/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Basic Linux 401}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1wpKyEhbPNQTZzwplEw6tVuWOwWNGz7zv/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Basic Linux 301}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1MMIma331bKIUi48JM1LeVoN7HqQyGvpa/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Basic Linux 201}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1ZjkmznYRdiaF7cU2sH9ctT_aDOPBavod/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Basic Linux 101}} - Turkcell Geleceği Yazanlar, June 2024 {\href{https://drive.google.com/file/d/1vxjC7sNosRZSfWmFjUxBFFtN8YMVDogF/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Advanced Java 101}} - Turkcell Geleceği Yazanlar, January 2024 {\href{https://drive.google.com/file/d/1aBq8jCQa5j_GXNiA9jb6-hDeL9MSDT6J/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Java 201}} - Turkcell Geleceği Yazanlar, January 2024 {\href{https://drive.google.com/file/d/1vD8vmiyYwKvS5aYOlA2uqjPI9n-wBM9T/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Java 101}} - Turkcell Geleceği Yazanlar, January 2024 {\href{https://drive.google.com/file/d/1zdZCYs2E5Qpped_xJRrILFj2uN1enebY/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Deep Learning Artificial Neural Networks}} - Turkcell Geleceği Yazanlar, August 2023 {\href{https://drive.google.com/file/d/16RW97XUNj9QyksCpjlbETMRPHho53KJg/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Basic Computer Network Course}} - Turkcell Geleceği Yazanlar, July 2023 {\href{https://drive.google.com/file/d/1c3lkospGb5_XNwzyL9Z_lm4VM06TJs1d/view?usp=drive_link}{\textbf{\color{blue}Certificate}}}
+        \item {\textbf{Programming for Everybody (Getting Started with Python)}} - Coursera, January 2021 {\href{https://www.coursera.org/account/accomplishments/certificate/6EU4LEV48RQX}{\textbf{\color{blue}Certificate}}}
+    \resumeItemListEnd
 \vspace{-5.5mm}
 
 %-------------------------------------------
